@@ -1,179 +1,265 @@
-<!DOCTYPE html >
+  <!DOCTYPE html >
 <html>
 <head>
 <title>Elisa Chaudet</title>
 
-<link rel="shortcut icon" href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/apple/81/right-pointing-magnifying-glass_1f50e.png" /> 
-
-</head>
-
-
-
+<link rel="shortcut icon" href="glass2.png" /> 
 
 
 <style>
-  .content {
-    max-width: 700px;
-    margin: auto;
-  }
-  </style>
-  <body>
+  /* http://meyerweb.com/eric/tools/css/reset/ 
+     v2.0 | 20110126
+     License: none (public domain)
+  */
   
-  <div class="content">
+  html, body, div, span, applet, object, iframe,
+  h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+  a, abbr, acronym, address, big, cite, code,
+  del, dfn, em, img, ins, kbd, q, s, samp,
+  small, strike, strong, sub, sup, tt, var,
+  b, u, i, center,
+  dl, dt, dd, ol, ul, li,
+  fieldset, form, label, legend,
+  table, caption, tbody, tfoot, thead, tr, th, td,
+  article, aside, canvas, details, embed, 
+  figure, figcaption, footer, header, hgroup, 
+  menu, nav, output, ruby, section, summary,
+  time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+  }
+  /* HTML5 display-role reset for older browsers */
+  article, aside, details, figcaption, figure, 
+  footer, header, hgroup, menu, nav, section {
+    display: block;
+  }
+  body {
+    line-height: 1;
+  }
+  ol, ul {
+    list-style: none;
+  }
+  blockquote, q {
+    quotes: none;
+  }
+  blockquote:before, blockquote:after,
+  q:before, q:after {
+    content: '';
+    content: none;
+  }
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+  
+  h1 {
+    text-align: left;
+    font-family: Times New Roman, Serif;
+    font-size: 20pt;
+    color: rgb(159, 136, 243);
+    font-weight:bold;
+
+    
+  
+  }
+  
+  body {
+    text-align: center;
+    color:black;
+    text-decoration: none;
+    
+  }
+  
+  
+  p {
+    text-align: justify;
+    font-family: Avenir, Sans-Serif;
+    font-size: 11pt;
+    color: black;
+  }
+  
+  img {
+    max-width: 270px;
+    height: auto;
+    padding-right: 3%
+  }
+  
+  /* unvisited link */
+  a:link {
+    color: black;
+    text-decoration: underline;
+    text-align: left;
+    font-family: Avenir, Sans-Serif;
+    font-size: 11pt;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: black;
+    text-decoration: underline;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color:rgb(159, 136, 243);
+    text-decoration: underline;
+  }
+  
+  /* selected link */
+  a:active {
+    color: rgb(159, 136, 243);
+    text-decoration: underline;
+  }
+
+  
+  /* Add a black background color to the top navigation */
+  .topnav {
+    position: fixed;
+    margin: 2rem;
+    overflow: hidden;
+  }
+  
+  @media screen and (max-device-width: 600px){
+    .topnav a {
+      font-size: 2.5rem !important;
+      text-align: justify; 
+    }
+
+    .item {
+      padding: 1px;
+      background-color: none;
+      border: 2.5px solid none;
+      width: 90vw !important;
+    }
+
+    .item h1 {
+      font-size: 4.5rem !important;
+    }
+
+    .item p {
+      font-size: 2.5rem !important;
+      text-align: justify; 
+    }
+
+    .item a {
+      font-size: 2.5rem !important;
+      text-align: justify; 
+    }
+
+    .item img {
+        width: 100%;
+        height: 100%;
+    }
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 8px 12px;
+    text-decoration: none;
+    font-family: Avenir, Sans-Serif;
+    font-size: 11pt;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: rgb(159, 136, 243);
+    color: white;
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    background-color: rgb(159, 136, 243);
+    color: white;
+  }
+  
+  body {
+    font: 1em Helvetica Neue, Helvetica, Arial, sans-serif;
+  }
+  
+  * {box-sizing: border-box;}
+  
+  p {
+    margin: 0 0 1em 0;
+  }
+  
+  .container {  
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  .item {
+    padding: 10px;
+    background-color: none;
+    border: 2px solid none;
+    width: 50vw;
+    display: flex; 
+    align-items: flex-end;
+    
+    
+  }
+  
+  
+  
+  </style>
+</head>
 
 
 
 <body>
 
+<div class="topnav">
+  <a class="active" href="index.html">.info</a>
+  <a href="contact.html">contact</a>
+  <a href="cv.html">CV</a>
+  
+</div>
 
-  <a href="https://ibb.co/ZxwgK6v"><img src="https://i.ibb.co/M7j1pDK/Selfportrait.png" 
-    alt="Selfportrait" border="0" ALIGN="left" ></a>
+
+
+<div class="container">
+  <div class="item">
+    <div class="body">
+
+
+
+
+
+
+
+  <img src="Tulips.png"
+    alt="tulips" border="0" ALIGN="left" >
     
 
 
-<h1>Currently,</h1>
 
-<p>I am working as a circulation assistant at the <a href="https://cargocollective.com/elisacelia" target="_blank"> Jewish Public Library</a> & as an image/metadata editor for <a href="https://elisachaudet.cargo.site" target="_blank"> DRAW</a> at McGill University. 
-  <br><br>Download CV.
-  </b>
-
-
- <script>
- 
- 
- var TxtType = function(el, toRotate, period) {
-        this.toRotate = toRotate;
-        this.el = el;
-        this.loopNum = 0;
-        this.period = parseInt(period, 10) || 2000;
-        this.txt = '';
-        this.tick();
-        this.isDeleting = false;
-    };
-
-    TxtType.prototype.tick = function() {
-        var i = this.loopNum % this.toRotate.length;
-        var fullTxt = this.toRotate[i];
-
-        if (this.isDeleting) {
-        this.txt = fullTxt.substring(0, this.txt.length - 1);
-        } else {
-        this.txt = fullTxt.substring(0, this.txt.length + 1);
-        }
-
-        this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
-
-        var that = this;
-        var delta = 200 - Math.random() * 100;
-
-        if (this.isDeleting) { delta /= 2; }
-
-        if (!this.isDeleting && this.txt === fullTxt) {
-        delta = this.period;
-        this.isDeleting = true;
-        } else if (this.isDeleting && this.txt === '') {
-        this.isDeleting = false;
-        this.loopNum++;
-        delta = 500;
-        }
-
-        setTimeout(function() {
-        that.tick();
-        }, delta);
-    };
-
-    window.onload = function() {
-        var elements = document.getElementsByClassName('typewrite');
-        for (var i=0; i<elements.length; i++) {
-            var toRotate = elements[i].getAttribute('data-type');
-            var period = elements[i].getAttribute('data-period');
-            if (toRotate) {
-              new TxtType(elements[i], JSON.parse(toRotate), period);
-            }
-        }
-        // INJECT CSS
-        var css = document.createElement("style");
-        css.type = "text/css";
-        css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
-        document.body.appendChild(css);
-    };
+    <h1>Currently,</h1>
+<br>
+    <p>I am working as a circulation assistant at the <a href="http://www.jewishpubliclibrary.org/splash.php" target="_blank"> JPL</a> & as an image/metadata editor for <a href="https://citsci.geog.mcgill.ca/en/about/draw" target="_blank"> DRAW</a> at McGill University. 
+      <br><br>
+      <a href="https://www.dropbox.com/s/9opu9n59nuaplbs/CV_elisa%20chaudet_QC__FR_EN.pdf?dl=0" target="_blank"> CV</a>
+      </b>
+  
 
 
-
- </script>
 
   
-</div>
+
 </body>
-
-
-
-
-<style>
-
-
-h1 {
-  text-align: left;
-  font-family: Times New Roman, Serif;
-  font-size: 20pt;
-  color: rgb(159, 136, 243);
-  padding-top: 8%
-
-}
-
-body {
-  text-align: center;
-  color:black;
-  text-decoration: none
-}
-
-
-p {
-  text-align: left;
-  font-family: Avenir, Sans-Serif;
-  font-size: 11pt;
-  color: black;
-}
-
-
-
-
-/* unvisited link */
-a:link {
-  color: black;
-  text-decoration: underline;
-}
-
-/* visited link */
-a:visited {
-  color: black;
-  text-decoration: underline;
-}
-
-/* mouse over link */
-a:hover {
-  color:rgb(159, 136, 243);
-  text-decoration: underline;
-}
-
-/* selected link */
-a:active {
-  color: rgb(159, 136, 243);
-  text-decoration: underline;
-}
-
-img {
-  max-width: 200px;
-  height: auto;
-  padding-right: 3%
-}
-
-
-
-
-
-
-</style>
-
+</div>
+</div>
+</div>
 
 </html>

@@ -62,7 +62,7 @@
     font-size: 20pt;
     color: rgb(159, 136, 243);
     font-weight:bold;
-    padding-top: 30px;
+
     
   
   }
@@ -83,7 +83,7 @@
   }
   
   img {
-    max-width: 200px;
+    max-width: 140px;
     height: auto;
     padding-right: 3%
   }
@@ -203,8 +203,8 @@
   .item {
     padding: 10px;
     background-color: none;
-    border: 2px solid none;
-    width: 50vw;
+    border: 1.5px solid none;
+    width: 30vw;
     display: flex; 
     align-items: flex-end;
     
@@ -239,84 +239,14 @@
 
 
 
-  <img src="selfportrait.png"
-    alt="Selfportrait" border="0" ALIGN="left" >
+  <img src="keetay.png"
+    alt="keetay" border="0" ALIGN="left" >
     
 
 
-<h1>Bonjour, Hi !</h1>
+<h1>Hello, Salut ~</h1>
 <br>
-<p>I'm Elisa. In 2015, I completed my BFA from SUNY Purchase
-  in <a href="https://cargocollective.com/elisacelia" target="_blank"> graphic design</a> & <a href="https://elisachaudet.cargo.site" target="_blank"> photography</a>. 
-  For several years I floated around new and old Amsterdam working as a designer, retail associate, book binder, etc. Finally, I took my tuxedo cat and moved to Montréal / Tiohtià:ke where I am
-  now working on my masters at McGill University in the School of Information Studies. I am interested in <n class="typewrite" data-period="2000" data-type='[ "the digital humanities.", "social infrastructure.", "the free-culture movement.", "archives as memory."  ]'>
-    <span class="wrap"></span>
-  
-
-
- <script>
- 
- 
- var TxtType = function(el, toRotate, period) {
-        this.toRotate = toRotate;
-        this.el = el;
-        this.loopNum = 0;
-        this.period = parseInt(period, 10) || 2000;
-        this.txt = '';
-        this.tick();
-        this.isDeleting = false;
-    };
-
-    TxtType.prototype.tick = function() {
-        var i = this.loopNum % this.toRotate.length;
-        var fullTxt = this.toRotate[i];
-
-        if (this.isDeleting) {
-        this.txt = fullTxt.substring(0, this.txt.length - 1);
-        } else {
-        this.txt = fullTxt.substring(0, this.txt.length + 1);
-        }
-
-        this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
-
-        var that = this;
-        var delta = 200 - Math.random() * 100;
-
-        if (this.isDeleting) { delta /= 2; }
-
-        if (!this.isDeleting && this.txt === fullTxt) {
-        delta = this.period;
-        this.isDeleting = true;
-        } else if (this.isDeleting && this.txt === '') {
-        this.isDeleting = false;
-        this.loopNum++;
-        delta = 500;
-        }
-
-        setTimeout(function() {
-        that.tick();
-        }, delta);
-    };
-
-    window.onload = function() {
-        var elements = document.getElementsByClassName('typewrite');
-        for (var i=0; i<elements.length; i++) {
-            var toRotate = elements[i].getAttribute('data-type');
-            var period = elements[i].getAttribute('data-period');
-            if (toRotate) {
-              new TxtType(elements[i], JSON.parse(toRotate), period);
-            }
-        }
-        // INJECT CSS
-        var css = document.createElement("style");
-        css.type = "text/css";
-        css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
-        document.body.appendChild(css);
-    };
-
-
-
- </script>
+<p>For professional inquiries or collaborations: <a href="mailto:elisa.chaudet@mail.mcgill.ca">Klik hier.</a>
 
   
 
@@ -324,7 +254,5 @@
 </div>
 </div>
 </div>
-
-</html>
 
 </html>
