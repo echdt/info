@@ -150,11 +150,15 @@
       text-align: justify; 
     }
 
-    .item img {
-        width: 100%;
-        height: 100%;
+    @media screen {
+        .item img {
+            max-width: 390px;
+        }
+
+        img.logoimage {
+            max-width:100%;
+        }
     }
-  }
   
   /* Style the links inside the navigation bar */
   .topnav a {
