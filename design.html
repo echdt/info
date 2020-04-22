@@ -1,4 +1,4 @@
-  <!DOCTYPE html >
+<!DOCTYPE html >
 <html>
 <head>
 <title>Elisa Chaudet</title>
@@ -82,7 +82,7 @@
   }
   
   img {
-    max-width: 140px;
+    max-width: 200px;
     height: auto;
     padding-right: 3%
   }
@@ -91,7 +91,7 @@
   a:link {
     color: black;
     text-decoration: underline;
-    text-align: justify;
+    text-align: left;
     font-family: Avenir, Sans-Serif;
     font-size: 11pt;
   }
@@ -149,12 +149,12 @@
       text-align: justify; 
     }
 
-    .item img {
-      max-width: 400px; 
+   .item img {
+            max-width: 390px;
         }
 
-
-  }
+        
+    }
   
   /* Style the links inside the navigation bar */
   .topnav a {
@@ -203,8 +203,8 @@
   .item {
     padding: 10px;
     background-color: none;
-    border: 2px solid none;
-    width: 25vw;
+    border: 1.5px solid none;
+    width: 45vw;
     display: flex; 
     align-items: flex-end;
     
@@ -222,11 +222,12 @@
 
 <div class="topnav">
   <a href="index.html">.info</a>
-  <a class="active" href="contact.html">contact</a>
+  <a href="contact.html">contact</a>
   <a href="cv.html">CV</a>
-  <a href="design.html">design</a>
+  <a class="active" href="design.html">design</a>
   
 </div>
+
 
 
 <div class="container">
@@ -239,24 +240,87 @@
 
 
 
-      <img src="keetay.png"
-      alt="keetay" border="0" ALIGN="left">
-      
+
+    
+
+
+<h1></h1>
+<br>
+<p>
+* ♥.•´¸.•*´✶´♡ ¸.•*´´♡ * <br>
+* // <u>UNDER CONSTRUCTION</u> // ❤ * <br>
+* .•´¸.•*´✶´♡ ¸.•*´´♡ * <br>
+*° ☆ ° ˛*˛☆_Π____*。*˚☆ * <br>
+*˚ ˛★˛•˚ */______/~＼。˚ ˚ ˛* <br>
+*˚ ˛•˛• ˚ ｜ 田田 ｜門｜ ˚* <br>
+* ╬═ ╬ ╬╬ ═╬╬═ * _ * _ * ○ *
+    <span class="wrap"></span>
   
 
 
-    <h1>Trouve-moi, Find me</h1><br>
-    <p>
-    <a href="mailto:elisa.chaudet@mail.mcgill.ca">Email</a><br>
-    <a href="https://github.com/echdt" target="_blank">GitHub</a><br>
-    <a href="https://www.goodreads.com/echdt/" target="_blank">Goodreads</a><br>
-    <a href="https://instagram.com/elisa.chdt/" target="_blank">Instagram</a><br>
-    <a href="https://www.linkedin.com/in/echdt/" target="_blank">LinkedIn</a><br>
-    <a href="https://twitter.com/echdt" target="_blank">Twitter</a>
-    </p>
-  
+ <script>
+ 
+ 
+ var TxtType = function(el, toRotate, period) {
+        this.toRotate = toRotate;
+        this.el = el;
+        this.loopNum = 0;
+        this.period = parseInt(period, 10) || 2000;
+        this.txt = '';
+        this.tick();
+        this.isDeleting = false;
+    };
+
+    TxtType.prototype.tick = function() {
+        var i = this.loopNum % this.toRotate.length;
+        var fullTxt = this.toRotate[i];
+
+        if (this.isDeleting) {
+        this.txt = fullTxt.substring(0, this.txt.length - 1);
+        } else {
+        this.txt = fullTxt.substring(0, this.txt.length + 1);
+        }
+
+        this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+
+        var that = this;
+        var delta = 200 - Math.random() * 100;
+
+        if (this.isDeleting) { delta /= 2; }
+
+        if (!this.isDeleting && this.txt === fullTxt) {
+        delta = this.period;
+        this.isDeleting = true;
+        } else if (this.isDeleting && this.txt === '') {
+        this.isDeleting = false;
+        this.loopNum++;
+        delta = 500;
+        }
+
+        setTimeout(function() {
+        that.tick();
+        }, delta);
+    };
+
+    window.onload = function() {
+        var elements = document.getElementsByClassName('typewrite');
+        for (var i=0; i<elements.length; i++) {
+            var toRotate = elements[i].getAttribute('data-type');
+            var period = elements[i].getAttribute('data-period');
+            if (toRotate) {
+              new TxtType(elements[i], JSON.parse(toRotate), period);
+            }
+        }
+        // INJECT CSS
+        var css = document.createElement("style");
+        css.type = "text/css";
+        css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
+        document.body.appendChild(css);
+    };
 
 
+
+ </script>
 
   
 
