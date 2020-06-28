@@ -211,8 +211,18 @@
     
   }
   
-
-
+  /* Button (open modal) */
+.button {
+  background-color: white;
+  border: 0px ;
+  color: none;
+  padding: none;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: none;
+  cursor: pointer;
+}
 
 
   /* The Modal (background) */
@@ -231,13 +241,11 @@
   
 }
 
-
-
 /* Modal Content/Box */
 .modal-content {
   background-color: #fefefe;
   margin: 2% auto; 
-  padding: 20px;
+  padding: 15px;
   border: 1px solid black;
   width: 80%; 
   height: 660px; 
@@ -283,11 +291,14 @@
   <div class="item">
     <div class="body">
 
-
-<p>This is selected work relating to information design and data visualization. As well as involving the marketing, branding, and dissemination of such content:</p>
+<h1>(more to come later)</h1> 
+<br>
+<p> 
+ This is selected work relating to information design and data visualization. 
+  <br>As well as involving the marketing, branding, and dissemination of such content:</p>
 
 <!-- Trigger/Open The Modal -->
-<button id="myBtn"><img src="design/onenyc.gif" width="300"></button>
+<button id="mybtn" class="button"> <img src="design/onenyc.gif" alt="onenyc" width="300" style="border:1px solid black" > </button>
 
 <!-- The Modal -->
 <div id="myModal" class="modal">
@@ -344,7 +355,7 @@
 var modal = document.getElementById("myModal");
 
 // Get the button that opens the modal
-var btn = document.getElementById("myBtn");
+var btn = document.getElementById("mybtn");
 
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
