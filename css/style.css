@@ -1,0 +1,377 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+h1 {
+  text-align: left;
+  font-family: Times New Roman, Serif;
+  font-size: 20pt;
+  color: rgb(159, 136, 243);
+  font-weight:bold;
+
+
+
+}
+
+body {
+  text-align: center;
+  color:black;
+  text-decoration: none;
+
+}
+
+p {
+  text-align: left;
+  font-family: Avenir, Sans-Serif;
+  font-size: 11pt;
+  color: black;
+}
+
+img {
+  max-width: 200px;
+  height: auto;
+}
+
+.image-left {
+  border: 0;
+  float: left;
+  padding-right: 3%;
+}
+
+.img-keetay {
+  max-width: 100px;
+  height: auto;
+  padding-right: 3%;
+  border: 0;
+  float: left;
+}
+
+.img-tulips {
+  max-width: 270px;
+  height: auto;
+  padding-right: 3%;
+  border: 0;
+  float: left;
+}
+
+.container-projects img {
+  max-width: 80%;
+  height: auto;
+  text-align: center;
+
+}
+
+/* unvisited link */
+a:link {
+  color: black;
+  text-decoration: underline;
+  text-align: left;
+  font-family: Avenir, Sans-Serif;
+  font-size: 11pt;
+}
+
+/* visited link */
+a:visited {
+  color: black;
+  text-decoration: underline;
+}
+
+/* mouse over link */
+a:hover {
+  color:rgb(159, 136, 243);
+  text-decoration: underline;
+}
+
+/* selected link */
+a:active {
+  color: rgb(159, 136, 243);
+  text-decoration: underline;
+}
+
+
+/* Add a black background color to the top navigation */
+.topnav {
+  position: fixed;
+  margin: 2rem;
+  overflow: hidden;
+}
+
+@media screen and (max-device-width: 600px){
+  .topnav a {
+    font-size: 2.5rem !important;
+    text-align: justify;
+  }
+
+  .item {
+    padding: 1px;
+    background-color: none;
+    border: 2.5px solid none;
+    width: 90vw !important;
+  }
+
+  .item h1 {
+    font-size: 4.5rem !important;
+  }
+
+  .item p {
+    font-size: 2.5rem !important;
+    text-align: justify;
+  }
+
+  .item a {
+    font-size: 2.5rem !important;
+    text-align: justify;
+  }
+
+ .item img {
+          max-width: 390px;
+      }
+
+
+  }
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 8px 12px;
+  text-decoration: none;
+  font-family: Avenir, Sans-Serif;
+  font-size: 11pt;
+}
+
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: rgb(159, 136, 243);
+  color: white;
+}
+
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: rgb(159, 136, 243);
+  color: white;
+}
+
+/* black navigation color for projects */
+#projects a:hover {
+  background-color: black;
+  color: white;
+}
+
+#projects a.active {
+  background-color: black;
+  color: white;
+}
+
+
+body {
+  font: 1em Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+* {box-sizing: border-box;}
+
+p {
+  margin: 0 0 1em 0;
+}
+
+.container-index {
+  padding: 100px;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  width: 70vw;
+  height: 70vh;
+}
+
+.item-index {
+  padding: 10px;
+  background-color: none;
+  border: 1.5px solid none;
+  width: 45vw;
+  display: flex;
+  align-items: flex-end;
+
+
+}
+
+
+.container-contact {
+  padding: 100px;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  width: 70vw;
+  height: 80vh;
+}
+
+.item-contact {
+  padding: 100px;
+  background-color: none;
+  border: 1.5px solid none;
+  width: 90vw;
+  display: flex;
+  align-items: flex-end;
+
+}
+
+.container-currently {
+  padding: 100px;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  width: 70vw;
+  height: 80vh;
+}
+
+.item-currently {
+  padding: 10px;
+  background-color: none;
+  border: 1.5px solid none;
+  width: 45vw;
+  display: flex;
+  align-items: flex-end;
+
+}
+
+
+.container-projects {
+  padding: 100px;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  width: 70vw;
+  height: 70vh;
+}
+
+.item-projects {
+  padding: 10px;
+  background-color: none;
+  border: 1.5px solid none;
+  width: 45vw;
+  display: flex;
+  align-items: flex-end;
+
+
+}
+
+/* Button (open modal) */
+.button {
+  background-color: white;
+  border: 0px ;
+  color: none;
+  padding: none;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: none;
+  cursor: pointer;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 50%;
+  top: 50%;
+  background-color: rgb(159, 136, 243, 50%);
+  width: 100%;
+  height: 100%;
+  overflow: scroll;
+  position: fixed;
+  transform: translate(-50%, -50%);
+
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 2% auto;
+  padding: 15px;
+  border: 1px solid black;
+  width: 80%;
+  height: 660px;
+  overflow: scroll;
+  font-family: Avenir, Sans-Serif;
+  font-size: 11pt;
+  color: black;
+}
+
+/* The Close Button */
+.close {
+  color: black;
+  position: absolute;
+  top: 50px;
+  right: 170px;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media screen and (min-device-width: 600px){
+#images{
+  width: 650px;
+}
+}
