@@ -49,10 +49,10 @@ table {
 
 h1 {
   text-align: left;
-  font-family: Times New Roman, Serif;
-  font-size: 20pt;
-  color: rgb(159, 136, 243);
-  font-weight:bold;
+  font-family: Times New Roman, Serif !important;
+  font-size: 20pt !important;
+  color: rgb(159, 136, 243) !important;
+  font-weight: bold !important;
 
 
 
@@ -77,10 +77,15 @@ img {
   height: auto;
 }
 
+.keetay {
+  margin-left: 100px !important;
+  margin-top: -50px !important;
+}
+
 .image-left {
   border: 0;
   float: left;
-  padding-right: 3%;
+  padding-right: 7%;
 }
 
 .img-keetay {
@@ -220,6 +225,10 @@ body {
 
 p {
   margin: 0 0 1em 0;
+}
+
+.container {
+  margin-left: 0 !important;
 }
 
 .container-index {
