@@ -173,6 +173,23 @@ a:active {
 }
 
 /* black navigation color for projects */
+#projects {
+  position: fixed;
+  margin: 2rem;
+  overflow: hidden;
+}
+
+#projects a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 8px 12px;
+  text-decoration: none;
+  font-family: Avenir, Sans-Serif;
+  font-size: 11pt;
+}
+
+
 #projects a:hover {
   background-color: black;
   color: white;
