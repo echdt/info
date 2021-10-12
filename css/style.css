@@ -129,13 +129,13 @@ a:visited {
 
 /* mouse over link */
 a:hover {
-  color:rgb(159, 136, 243);
+  color:rgb(159, 136, 243) !important;
   text-decoration: underline;
 }
 
 /* selected link */
 a:active {
-  color: rgb(159, 136, 243);
+  color: rgb(159, 136, 243) !important;
   text-decoration: underline;
 }
 
