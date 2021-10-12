@@ -177,6 +177,8 @@ a:active {
   position: fixed;
   margin: 2rem;
   overflow: hidden;
+  padding-left: 12px;
+  padding-top: 1px;
 }
 
 #projects a {
