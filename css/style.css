@@ -114,62 +114,62 @@ img {
 
 /* unvisited link */
 a:link {
-  color: black;
-  text-decoration: underline;
-  text-align: left;
-  font-family: Avenir, Sans-Serif;
-  font-size: 11pt;
+  color: black !important;
+  text-decoration: underline !important;
+  text-align: left !important;
+  font-family: Avenir, Sans-Serif !important;
+  font-size: 11pt !important;
 }
 
 /* visited link */
 a:visited {
-  color: black;
-  text-decoration: underline;
+  color: black !important;
+  text-decoration: underline !important;
 }
 
 /* mouse over link */
 a:hover {
   color:rgb(159, 136, 243) !important;
-  text-decoration: underline;
+  text-decoration: underline !important;
 }
 
 /* selected link */
 a:active {
   color: rgb(159, 136, 243) !important;
-  text-decoration: underline;
+  text-decoration: underline !important;
 }
 
 
 /* Add a black background color to the top navigation */
 .topnav {
-  position: fixed;
-  margin: 2rem;
-  overflow: hidden;
+  position: fixed !important;
+  margin: 2rem !important;
+  overflow: hidden !important;
 }
 
 /* Style the links inside the navigation bar */
 .topnav a {
-  float: left;
-  color: black;
-  text-align: center;
-  padding: 8px 12px;
-  text-decoration: none;
-  font-family: Avenir, Sans-Serif;
-  font-size: 11pt;
+  float: left !important;
+  color: black !important;
+  text-align: center !important;
+  padding: 8px 12px !important;
+  text-decoration: none !important;
+  font-family: Avenir, Sans-Serif !important;
+  font-size: 11pt !important;
 }
 
 
 /* Change the color of links on hover */
 .topnav a:hover {
-  background-color: rgb(159, 136, 243);
-  color: white;
+  background-color: rgb(159, 136, 243) !important;
+  color: white !important;
 }
 
 
 /* Add a color to the active/current link */
 .topnav a.active {
-  background-color: rgb(159, 136, 243);
-  color: white;
+  background-color: rgb(159, 136, 243) !important;
+  color: white !important;
 }
 
 /* black navigation color for projects */
