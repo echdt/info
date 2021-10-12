@@ -143,6 +143,7 @@ a:active {
 /* Add a black background color to the top navigation */
 .topnav {
   position: fixed !important;
+  color: black !important;
   margin: 2rem !important;
   overflow: hidden !important;
 }
@@ -183,7 +184,7 @@ a:active {
 
 #projects a {
   float: left;
-  color: black;
+  color: black !important;
   text-align: center;
   padding: 8px 12px;
   text-decoration: none;
@@ -193,13 +194,13 @@ a:active {
 
 
 #projects a:hover {
-  background-color: black;
-  color: white;
+  background-color: black !important;
+  color: white !important;
 }
 
 #projects a.active {
-  background-color: black;
-  color: white;
+  background-color: black !important;
+  color: white !important;
 }
 
 
