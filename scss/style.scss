@@ -247,15 +247,15 @@ p {
   display: flex;
   align-items: center;
   justify-content: left;
-  width: 70vw;
-  height: 70vh;
+  width: 200vw;
+  height: 90vh;
 }
 
 .item-projects {
   padding: 10px;
   background-color: none;
   border: 1.5px solid none;
-  width: 45vw;
+  width: 400vw;
   display: flex;
   align-items: flex-end;
 
@@ -345,6 +345,7 @@ p {
 
   .container-projects{
     padding: 10px;
+    padding-top: 100px;
     width: 100%;
     height: 100%;
   }
