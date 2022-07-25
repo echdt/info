@@ -1,53 +1,53 @@
-@import "variables.scss";
-
 h1 {
   text-align: left;
-  font-family: $font1 !important;
-  font-size: $font1size !important;
-  color: $highlight !important;
+  font-family: Garamond, Serif !important;
+  font-size: 20pt !important;
+  color: #9f88f3 !important;
   font-weight: bold !important;
   margin-bottom: 0 !important;
-
 }
 
 body {
   text-align: center;
-  color:black;
+  color: black;
   text-decoration: none;
-  font-family: $font2;
-  font-size: $font2size;
-  color: black
-
+  font-family: Avenir, Sans-Serif;
+  font-size: 11pt;
+  color: black;
 }
 
 p {
   text-align: left;
-  font-family: $font2;
-  font-size: $font2size;
+  font-family: Avenir, Sans-Serif;
+  font-size: 11pt;
   color: black;
 }
 
 img {
   max-width: 200px;
   height: auto;
- 
-  .keetay {
+}
+
+img .keetay {
   margin-left: 100px !important;
   margin-top: -60px !important;
+}
 
-  .image-left {
+img .keetay .image-left {
   border: 0;
   float: left;
   padding-right: 7%;
+}
 
-.img-keetay {
+img .keetay .image-left .img-keetay {
   max-width: 100px;
   height: auto;
   padding-right: 3%;
   border: 0;
   float: left;
+}
 
-.img-tulips {
+img .keetay .image-left .img-keetay .img-tulips {
   max-width: 270px;
   height: auto;
   padding-right: 3%;
@@ -55,17 +55,12 @@ img {
   float: left;
   margin-bottom: 10px !important;
   margin-right: 10px !important;
+}
 
-.container-projects {
+img .keetay .image-left .img-keetay .img-tulips .container-projects {
   max-width: 80%;
   height: auto;
   text-align: center;
-
-}
-}
-}
-}
-}
 }
 
 /* unvisited link */
@@ -73,8 +68,8 @@ a:link {
   color: black !important;
   text-decoration: underline !important;
   text-align: left !important;
-  font-family: $font2 !important;
-  font-size: $font2size !important;
+  font-family: Avenir, Sans-Serif !important;
+  font-size: 11pt !important;
 }
 
 /* visited link */
@@ -85,16 +80,15 @@ a:visited {
 
 /* mouse over link */
 a:hover {
-  color: $highlight  !important;
+  color: #9f88f3 !important;
   text-decoration: underline !important;
 }
 
 /* selected link */
 a:active {
-  color: $highlight !important;
+  color: #9f88f3 !important;
   text-decoration: underline !important;
 }
-
 
 /* Add a black background color to the top navigation */
 .topnav {
@@ -102,32 +96,30 @@ a:active {
   color: black !important;
   margin: 2rem !important;
   overflow: hidden !important;
+  /* Style the links inside the navigation bar */
+}
 
-/* Style the links inside the navigation bar */
-    a {
+.topnav a {
   float: left !important;
   color: black !important;
   text-align: center !important;
   padding: 8px 12px !important;
   text-decoration: none !important;
-  font-family: $font2 !important;
-  font-size: $font2size !important;
+  font-family: Avenir, Sans-Serif !important;
+  font-size: 11pt !important;
+  /* Change the color of links on hover */
+}
 
-/* Change the color of links on hover */
-    a:hover {
-  background-color: $highlight  !important;
+.topnav a a:hover {
+  background-color: #9f88f3 !important;
   color: white !important;
+  /* Add a color to the active/current link */
+}
 
-
-/* Add a color to the active/current link */
-    a.active {
-  background-color: $highlight  !important;
+.topnav a a:hover a.active {
+  background-color: #9f88f3 !important;
   color: white !important;
 }
-}
-}
-}
-
 
 /* black navigation color for projects */
 #projects {
@@ -136,39 +128,40 @@ a:active {
   overflow: hidden;
   padding-left: 12px;
   padding-top: 1px;
+}
 
-  a {
+#projects a {
   float: left;
   color: black !important;
   text-align: center;
   padding: 8px 12px;
   text-decoration: none;
-  font-family: $font2;
-  font-size: $font2size;
+  font-family: Avenir, Sans-Serif;
+  font-size: 11pt;
+}
 
-  a:hover {
-  background-color: black !important;
-  color: white !important;
-
-  a.active {
+#projects a a:hover {
   background-color: black !important;
   color: white !important;
 }
-}
-}
-}
 
+#projects a a:hover a.active {
+  background-color: black !important;
+  color: white !important;
+}
 
 body {
   font: 1em Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 
-* {box-sizing: border-box;}
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
 
 p {
   margin: 0 0 1em 0;
 }
-
 
 .container {
   margin-left: 0 !important;
@@ -178,9 +171,15 @@ p {
   padding: 100px;
   margin: 0;
   list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: left;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
   width: 70vw;
   height: 70vh;
 }
@@ -190,20 +189,27 @@ p {
   background-color: none;
   border: 1.5px solid none;
   width: 45vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: flex-end;
-
-
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
-
 
 .container-contact {
   padding: 100px;
   margin: 0;
   list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: left;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
   width: 70vw;
   height: 80vh;
 }
@@ -213,18 +219,27 @@ p {
   background-color: none;
   border: 1.5px solid none;
   width: 90vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: flex-end;
-
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 .container-currently {
   padding: 100px;
   margin: 0;
   list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: left;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
   width: 70vw;
   height: 80vh;
 }
@@ -234,19 +249,27 @@ p {
   background-color: none;
   border: 1.5px solid none;
   width: 45vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: flex-end;
-
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
-
 
 .container-projects {
   padding: 100px;
   margin: 0;
   list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: left;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
   width: 70vw;
   height: 70vh;
 }
@@ -256,16 +279,18 @@ p {
   background-color: none;
   border: 1.5px solid none;
   width: 45vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: flex-end;
-
-
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 /* Button (open modal) */
 .button {
   background-color: white;
-  border: 0px ;
+  border: 0px;
   color: none;
   padding: none;
   text-align: center;
@@ -277,18 +302,21 @@ p {
 
 /* The Modal (background) */
 .modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
   left: 50%;
   top: 50%;
-  background-color: $highlight ;
+  background-color: #9f88f3;
   width: 100%;
   height: 100%;
   overflow: scroll;
   position: fixed;
-  transform: translate(-50%, -50%);
-
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 /* Modal Content/Box */
@@ -300,8 +328,8 @@ p {
   width: 80%;
   height: 660px;
   overflow: scroll;
-  font-family: $font2;
-  font-size: $font2size;
+  font-family: Avenir, Sans-Serif;
+  font-size: 11pt;
   color: black;
 }
 
@@ -322,83 +350,67 @@ p {
   cursor: pointer;
 }
 
-
 @media screen and (max-width: 480px) {
-
-  .container-index{
+  .container-index {
     padding: 10px;
     width: 100%;
     height: 100%;
   }
-
-  .container-contact{
+  .container-contact {
     padding: 10px;
     width: 100%;
     height: 100%;
   }
-
-  .container-currently{
+  .container-currently {
     padding: 10px;
     width: 100%;
     height: 100%;
   }
-
-  .container-projects{
+  .container-projects {
     padding: 10px;
     width: 100%;
     height: 100%;
   }
-
-  .close{
+  .close {
     top: 7px;
     right: 50px;
   }
-
-  .img-tulips{
+  .img-tulips {
     width: 210px;
     margin-top: 30px !important;
     margin-left: -25px !important;
   }
-
   .col-10, .col-6, .img-keetay, .img-tulips {
     margin: auto;
     margin-top: 70px;
   }
-
-  #images{
+  #images {
     width: 340px;
     margin-top: 70px;
   }
-
-
   .topnav a {
-    font-size: $font2size !important;
+    font-size: 11pt !important;
     text-align: justify;
   }
-
-
   .item {
     padding: 1px;
     background-color: none;
     border: 2.5px solid none;
     width: 90vw !important;
-    
-    h1 {
+  }
+  .item h1 {
     font-size: 4.5rem !important;
-    
-    p {
-    font-size: $font2size !important;
+  }
+  .item h1 p {
+    font-size: 11pt !important;
     text-align: justify;
- 
-    a {
+  }
+  .item h1 p a {
     font-size: 2.5rem !important;
     text-align: justify;
-
-    img {
+  }
+  .item h1 p a img {
     max-width: 390px;
+  }
 }
-}
-}
-}
-}
-}
+/*# sourceMappingURL=style.css.map */
