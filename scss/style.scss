@@ -30,15 +30,18 @@ p {
 img {
   max-width: 200px;
   height: auto;
- 
-  .keetay {
+}
+
+.keetay {
   margin-left: 100px !important;
   margin-top: -60px !important;
+}
 
-  .image-left {
+.image-left {
   border: 0;
   float: left;
   padding-right: 7%;
+}
 
 .img-keetay {
   max-width: 100px;
@@ -46,6 +49,7 @@ img {
   padding-right: 3%;
   border: 0;
   float: left;
+}
 
 .img-tulips {
   max-width: 270px;
@@ -55,26 +59,28 @@ img {
   float: left;
   margin-bottom: 10px !important;
   margin-right: 10px !important;
+}
 
-.container-projects {
+
+.container-projects img {
   max-width: 80%;
   height: auto;
   text-align: center;
 
 }
-}
-}
-}
-}
-}
+
+
+
+
+
 
 /* unvisited link */
 a:link {
   color: black !important;
   text-decoration: underline !important;
   text-align: left !important;
-  font-family: $font2 !important;
-  font-size: $font2size !important;
+  font-family: Avenir, Sans-Serif !important;
+  font-size: 11pt !important;
 }
 
 /* visited link */
@@ -85,7 +91,7 @@ a:visited {
 
 /* mouse over link */
 a:hover {
-  color: $highlight  !important;
+  color: $highlight !important;
   text-decoration: underline !important;
 }
 
@@ -102,9 +108,10 @@ a:active {
   color: black !important;
   margin: 2rem !important;
   overflow: hidden !important;
+}
 
 /* Style the links inside the navigation bar */
-    a {
+.topnav a {
   float: left !important;
   color: black !important;
   text-align: center !important;
@@ -112,21 +119,22 @@ a:active {
   text-decoration: none !important;
   font-family: $font2 !important;
   font-size: $font2size !important;
+}
 
 /* Change the color of links on hover */
-    a:hover {
-  background-color: $highlight  !important;
+.topnav a:hover {
+  background-color: $highlight !important;
   color: white !important;
-
+}
 
 /* Add a color to the active/current link */
-    a.active {
-  background-color: $highlight  !important;
+.topnav a.active {
+  background-color: $highlight !important;
   color: white !important;
 }
-}
-}
-}
+
+
+
 
 
 /* black navigation color for projects */
@@ -134,28 +142,29 @@ a:active {
   position: fixed;
   margin: 2rem;
   overflow: hidden;
-  padding-left: 12px;
-  padding-top: 1px;
 
-  a {
+}
+
+
+#projects a {
   float: left;
-  color: black !important;
+  color: $projectsnav;
   text-align: center;
   padding: 8px 12px;
   text-decoration: none;
   font-family: $font2;
   font-size: $font2size;
+}
 
-  a:hover {
+
+#projects a:hover {
   background-color: black !important;
   color: white !important;
+}
 
-  a.active {
+#projects a.active {
   background-color: black !important;
   color: white !important;
-}
-}
-}
 }
 
 
@@ -241,21 +250,22 @@ p {
 
 
 .container-projects {
-  padding: 100px;
+  padding: 50px;
+  padding-top: 100px;
   margin: 0;
   list-style: none;
   display: flex;
   align-items: center;
   justify-content: left;
-  width: 200vw;
-  height: 90vh;
+  width: 100vw;
+  height: 80vh;
 }
 
 .item-projects {
-  padding: 10px;
+  padding: 0px;
   background-color: none;
   border: 1.5px solid none;
-  width: 400vw;
+  width: 130vw;
   display: flex;
   align-items: flex-end;
 
