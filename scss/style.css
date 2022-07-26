@@ -2,7 +2,7 @@ h1 {
   text-align: left;
   font-family: "Times New Roman", Times, serif !important;
   font-size: 20pt !important;
-  color: #CCCCFF !important;
+  color: #8f99fb !important;
   font-weight: bold !important;
   margin-bottom: 0 !important;
 }
@@ -80,13 +80,13 @@ a:visited {
 
 /* mouse over link */
 a:hover {
-  color: #CCCCFF !important;
+  color: #8f99fb !important;
   text-decoration: underline !important;
 }
 
 /* selected link */
 a:active {
-  color: #CCCCFF !important;
+  color: #8f99fb !important;
   text-decoration: underline !important;
 }
 
@@ -111,13 +111,13 @@ a:active {
 
 /* Change the color of links on hover */
 .topnav a:hover {
-  background-color: #CCCCFF !important;
+  background-color: #8f99fb !important;
   color: white !important;
 }
 
 /* Add a color to the active/current link */
 .topnav a.active {
-  background-color: #CCCCFF !important;
+  background-color: #8f99fb !important;
   color: white !important;
 }
 
@@ -309,7 +309,7 @@ p {
   /* Sit on top */
   left: 50%;
   top: 50%;
-  background-color: #CCCCFF;
+  background-color: #8f99fb;
   width: 100%;
   height: 100%;
   overflow: scroll;
