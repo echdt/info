@@ -274,29 +274,6 @@ p {
 
 }
 
-
-.container-aurevoir {
-  padding: 100px;
-  margin: 0;
-  list-style: none;
-  display: flex;
-  align-items: center;
-  justify-content: left;
-  width: 150vw;
-  height: 70vh;
-}
-
-.item-aurevoir {
-  padding: 10px;
-  background-color: none;
-  border: 1.5px solid none;
-  width: 100vw;
-  display: flex;
-  align-items: flex-end;
-
-
-}
-
 /* Button (open modal) */
 .button {
   background-color: white;
@@ -385,12 +362,6 @@ p {
     height: 100%;
   }
 
-  .container-aurevoir{
-    padding: 10px;
-    width: 100%;
-    height: 100%;
-  }
-
   .close{
     top: 7px;
     right: 50px;
@@ -402,17 +373,10 @@ p {
     margin-left: -25px !important;
   }
 
-  .img-ipad{
-    width: 350px;
-    margin-top: 30px !important;
-    margin-left: -25px !important;
-  }
-
-  .col-10, .col-6, .img-keetay, .img-tulips, .img-ipad {
+  .col-10, .col-6, .img-keetay, .img-tulips {
     margin: auto;
     margin-top: 70px;
   }
-
 
   #images{
     width: 340px;
