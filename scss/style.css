@@ -57,6 +57,16 @@ img {
   margin-right: 10px !important;
 }
 
+.img-ipad {
+  max-width: 350px;
+  height: auto;
+  padding-right: 3%;
+  border: 0;
+  float: left;
+  margin-bottom: 10px !important;
+  margin-right: 10px !important;
+}
+
 .container-projects img {
   max-width: 80%;
   height: auto;
@@ -286,6 +296,36 @@ p {
           align-items: flex-end;
 }
 
+.container-aurevoir {
+  padding: 100px;
+  margin: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  width: 150vw;
+  height: 70vh;
+}
+
+.item-aurevoir {
+  padding: 10px;
+  background-color: none;
+  border: 1.5px solid none;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
 /* Button (open modal) */
 .button {
   background-color: white;
@@ -371,6 +411,11 @@ p {
     width: 100%;
     height: 100%;
   }
+  .container-aurevoir {
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+  }
   .close {
     top: 7px;
     right: 50px;
@@ -380,7 +425,12 @@ p {
     margin-top: 30px !important;
     margin-left: -25px !important;
   }
-  .col-10, .col-6, .img-keetay, .img-tulips {
+  .img-ipad {
+    width: 350px;
+    margin-top: 30px !important;
+    margin-left: -25px !important;
+  }
+  .col-10, .col-6, .img-keetay, .img-tulips, .img-ipad {
     margin: auto;
     margin-top: 70px;
   }
