@@ -8,6 +8,7 @@ h1 {
 }
 
 body {
+  margin: 0 !important;
   text-align: center;
   color: black;
   text-decoration: none;
@@ -23,20 +24,22 @@ p {
   color: black;
 }
 
-img {
-  max-width: 200px;
+.selfportrait-image {
+  max-width: 350px;
   height: auto;
+  padding-right: 3%;
+  border: 0;
+  margin-bottom: 10px !important;
+  margin-right: 10px !important;
+}
+
+#selfportrait-id {
+  width: 200px;
 }
 
 .keetay {
   margin-left: 100px !important;
   margin-top: -60px !important;
-}
-
-.image-left {
-  border: 0;
-  float: left;
-  padding-right: 7%;
 }
 
 .img-keetay {
@@ -52,9 +55,25 @@ img {
   height: auto;
   padding-right: 3%;
   border: 0;
-  float: left;
   margin-bottom: 10px !important;
   margin-right: 10px !important;
+}
+
+#tulips-id {
+  width: 300px;
+}
+
+.ipad-image {
+  max-width: 350px;
+  height: auto;
+  padding-right: 3%;
+  border: 0;
+  margin-bottom: 10px !important;
+  margin-right: 10px !important;
+}
+
+#ipad-id {
+  width: 300px;
 }
 
 .container-projects img {
@@ -128,6 +147,10 @@ a:active {
   overflow: hidden;
 }
 
+#container-projects-id {
+  padding-left: 12px;
+}
+
 #projects a {
   float: left;
   color: black;
@@ -179,14 +202,14 @@ p {
       -ms-flex-pack: left;
           justify-content: left;
   width: 70vw;
-  height: 70vh;
+  height: 80vh;
 }
 
 .item-index {
-  padding: 10px;
+  padding: 100px;
   background-color: none;
   border: 1.5px solid none;
-  width: 45vw;
+  width: 90vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -229,35 +252,26 @@ p {
   padding: 100px;
   margin: 0;
   list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: block;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: left;
       -ms-flex-pack: left;
           justify-content: left;
-  width: 70vw;
-  height: 80vh;
 }
 
 .item-currently {
-  padding: 10px;
+  padding: 100px;
   background-color: none;
   border: 1.5px solid none;
-  width: 45vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  display: block;
+  width: 500px;
 }
 
 .container-projects {
   padding: 50px;
-  padding-top: 100px;
+  padding-top: 250px;
   margin: 0;
   list-style: none;
   display: -webkit-box;
@@ -380,7 +394,9 @@ p {
     margin-top: 30px !important;
     margin-left: -25px !important;
   }
-  .col-10, .col-6, .img-keetay, .img-tulips {
+  .img-keetay,
+  .img-tulips,
+  .img-ipad {
     margin: auto;
     margin-top: 70px;
   }

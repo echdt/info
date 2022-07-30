@@ -1,4 +1,4 @@
-@import "variables.scss";
+@import 'variables.scss';
 
 h1 {
   text-align: left;
@@ -7,17 +7,16 @@ h1 {
   color: $highlight !important;
   font-weight: bold !important;
   margin-bottom: 0 !important;
-
 }
 
 body {
+  margin: 0 !important;
   text-align: center;
-  color:black;
+  color: black;
   text-decoration: none;
   font-family: $font2;
   font-size: $font2size;
-  color: black
-
+  color: black;
 }
 
 p {
@@ -27,20 +26,22 @@ p {
   color: black;
 }
 
-img {
-  max-width: 200px;
+.selfportrait-image {
+  max-width: 350px;
   height: auto;
+  padding-right: 3%;
+  border: 0;
+  margin-bottom: 10px !important;
+  margin-right: 10px !important;
+}
+
+#selfportrait-id{
+  width: 200px;
 }
 
 .keetay {
   margin-left: 100px !important;
   margin-top: -60px !important;
-}
-
-.image-left {
-  border: 0;
-  float: left;
-  padding-right: 7%;
 }
 
 .img-keetay {
@@ -56,26 +57,32 @@ img {
   height: auto;
   padding-right: 3%;
   border: 0;
-  float: left;
   margin-bottom: 10px !important;
   margin-right: 10px !important;
 }
 
+#tulips-id{
+  width: 300px;
+}
 
+.ipad-image {
+  max-width: 350px;
+  height: auto;
+  padding-right: 3%;
+  border: 0;
+  margin-bottom: 10px !important;
+  margin-right: 10px !important;
+}
 
-
+#ipad-id{
+  width: 300px;
+}
 
 .container-projects img {
   max-width: 80%;
   height: auto;
   text-align: center;
-
 }
-
-
-
-
-
 
 /* unvisited link */
 a:link {
@@ -103,7 +110,6 @@ a:active {
   color: $highlight !important;
   text-decoration: underline !important;
 }
-
 
 /* Add a black background color to the top navigation */
 .topnav {
@@ -136,16 +142,15 @@ a:active {
   color: white !important;
 }
 
-
-
-
-
 /* black navigation color for projects */
 #projects {
   position: fixed;
   margin: 2rem;
   overflow: hidden;
+}
 
+#container-projects-id {
+  padding-left: 12px;
 }
 
 #projects a {
@@ -158,7 +163,6 @@ a:active {
   font-size: $font2size;
 }
 
-
 #projects a:hover {
   background-color: black !important;
   color: white !important;
@@ -169,17 +173,17 @@ a:active {
   color: white !important;
 }
 
-
 body {
   font: 1em Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 
-* {box-sizing: border-box;}
+* {
+  box-sizing: border-box;
+}
 
 p {
   margin: 0 0 1em 0;
 }
-
 
 .container {
   margin-left: 0 !important;
@@ -193,20 +197,17 @@ p {
   align-items: center;
   justify-content: left;
   width: 70vw;
-  height: 70vh;
+  height: 80vh;
 }
 
 .item-index {
-  padding: 10px;
+  padding: 100px;
   background-color: none;
   border: 1.5px solid none;
-  width: 45vw;
+  width: 90vw;
   display: flex;
   align-items: flex-end;
-
-
 }
-
 
 .container-contact {
   padding: 100px;
@@ -226,34 +227,28 @@ p {
   width: 90vw;
   display: flex;
   align-items: flex-end;
-
 }
 
 .container-currently {
   padding: 100px;
   margin: 0;
   list-style: none;
-  display: flex;
+  display: block;
   align-items: center;
   justify-content: left;
-  width: 70vw;
-  height: 80vh;
 }
 
 .item-currently {
-  padding: 10px;
+  padding: 100px;
   background-color: none;
   border: 1.5px solid none;
-  width: 45vw;
-  display: flex;
-  align-items: flex-end;
-
+  display: block;
+  width: 500px;
 }
-
 
 .container-projects {
   padding: 50px;
-  padding-top: 100px;
+  padding-top: 250px;
   margin: 0;
   list-style: none;
   display: flex;
@@ -263,6 +258,8 @@ p {
   height: 80vh;
 }
 
+
+
 .item-projects {
   padding: 0px;
   background-color: none;
@@ -270,14 +267,12 @@ p {
   width: 130vw;
   display: flex;
   align-items: flex-end;
-
-
 }
 
 /* Button (open modal) */
 .button {
   background-color: white;
-  border: 0px ;
+  border: 0px;
   color: none;
   padding: none;
   text-align: center;
@@ -294,13 +289,12 @@ p {
   z-index: 1; /* Sit on top */
   left: 50%;
   top: 50%;
-  background-color: $highlight ;
+  background-color: $highlight;
   width: 100%;
   height: 100%;
   overflow: scroll;
   position: fixed;
   transform: translate(-50%, -50%);
-
 }
 
 /* Modal Content/Box */
@@ -334,84 +328,82 @@ p {
   cursor: pointer;
 }
 
-
 @media screen and (max-width: 480px) {
-
-  .container-index{
+  .container-index {
     padding: 10px;
     width: 100%;
     height: 100%;
   }
 
-  .container-contact{
+  .container-contact {
     padding: 10px;
     width: 100%;
     height: 100%;
   }
 
-  .container-currently{
+  .container-currently {
     padding: 10px;
     width: 100%;
     height: 100%;
   }
 
-  .container-projects{
+  .container-projects {
     padding: 10px;
     padding-top: 100px;
     width: 100%;
     height: 100%;
   }
 
-  .close{
+  .close {
     top: 7px;
     right: 50px;
   }
 
-  .img-tulips{
+  .img-tulips {
     width: 210px;
     margin-top: 30px !important;
     margin-left: -25px !important;
   }
 
-  .col-10, .col-6, .img-keetay, .img-tulips {
+  .img-keetay,
+  .img-tulips,
+  .img-ipad {
     margin: auto;
     margin-top: 70px;
   }
 
-  #images{
+  #images {
     width: 340px;
     margin-top: 70px;
   }
-
 
   .topnav a {
     font-size: $font2size !important;
     text-align: justify;
   }
 
-
   .item {
     padding: 1px;
     background-color: none;
     border: 2.5px solid none;
     width: 90vw !important;
-    
-    h1 {
-    font-size: 4.5rem !important;
-    
-    p {
-    font-size: $font2size !important;
-    text-align: justify;
- 
-    a {
-    font-size: 2.5rem !important;
-    text-align: justify;
 
-    img {
-    max-width: 390px;
-}
-}
-}
-}
-}
+    h1 {
+      font-size: 4.5rem !important;
+
+      p {
+        font-size: $font2size !important;
+        text-align: justify;
+
+        a {
+          font-size: 2.5rem !important;
+          text-align: justify;
+
+          img {
+            max-width: 390px;
+          }
+        }
+      }
+    }
+  }
 }
